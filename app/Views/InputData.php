@@ -11,7 +11,7 @@
     <div class="container mt-5">
         <h1  class="text-center mb-4" style="margin: 0;">Welcome!</h1>
 
-        <form action="./displayName" method="GET">
+        <form method="GET" action="<?= base_url('/displayName') ?>">
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="fname" class="form-label">First Name</label>
