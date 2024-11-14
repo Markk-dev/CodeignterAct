@@ -10,6 +10,7 @@
 <body>
     <div class="container mt-5">
         <h1>Student Data</h1>
+        <p><strong>Student ID:</strong> <?= esc($studID) ?: 'No Student ID provided'; ?></p>
         <p><strong>First Name:</strong> <?= esc($fname) ?: 'No first name provided'; ?></p>
         <p><strong>Last Name:</strong> <?= esc($lname) ?: 'No last name provided'; ?></p>
         <p><strong>Address:</strong> <?= esc($address) ?: 'No address provided'; ?></p>

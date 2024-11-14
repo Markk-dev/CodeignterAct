@@ -12,6 +12,11 @@
         <h1  class="text-center mb-4" style="margin: 0;">Welcome!</h1>
 
         <form method="GET" action="<?= base_url('/displayName') ?>">
+                <div>
+                    <label for="studID" class="form-label">Student ID</label>
+                    <input type="text" id="studID" name="studID" class="form-control" required>
+                </div>
+
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="fname" class="form-label">First Name</label>

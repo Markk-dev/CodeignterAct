@@ -14,6 +14,7 @@ class Home extends BaseController
     public function displayName()
     {
         // Retrieving data from the URL using GET
+        $studID = $this->request->getGet('studID');
         $fname = $this->request->getGet('fname');
         $lname = $this->request->getGet('lname');
         $address = $this->request->getGet('address');
@@ -25,6 +26,7 @@ class Home extends BaseController
         
         // Pass data to the view
         return view('DisplayData', [
+            'studID' => $studID,
             'fname' => $fname,
             'lname' => $lname,
             'address' => $address,
