@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Data Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?= base_url('public/styles.css'); ?>"> <!-- Custom CSS -->
+    <link rel="stylesheet" href="<?= base_url('styles.css'); ?>"> <!-- Custom CSS -->
 </head>
 <body>
     <div class="container mt-5">
         <h1  class="text-center mb-4" style="margin: 0;">Welcome!</h1>
-        <form action="/displayName" method="GET">
+
+        <form action="./displayName" method="GET">
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="fname" class="form-label">First Name</label>
