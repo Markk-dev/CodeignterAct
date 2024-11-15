@@ -7,15 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('styles.css'); ?>"> 
 </head>
-<body>
+<body class="bg-light">
     <div class="container mt-5">
-        <h1  class="text-center mb-4" style="margin: 0;">Welcome!</h1>
+        <h1 class="text-center mb-4" style="font-weight: bold;">Welcome!</h1>
 
-        <form method="GET" action="<?= base_url('/displayName') ?>">
-                <div>
-                    <label for="studID" class="form-label">Student ID</label>
-                    <input type="text" id="studID" name="studID" class="form-control" required>
-                </div>
+        <form method="GET" action="<?= base_url('/displayName') ?>" class="card shadow-sm p-4" style="max-width: 600px; border-radius: 10px;">
+            <div class="mb-3">
+                <label for="studID" class="form-label">Student ID</label>
+                <input type="text" id="studID" name="studID" class="form-control" required>
+            </div>
 
             <div class="row mb-3">
                 <div class="col-md-6">
@@ -27,6 +27,7 @@
                     <input type="text" id="lname" name="lname" class="form-control" required>
                 </div>
             </div>
+
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="address" class="form-label">Address</label>
@@ -37,6 +38,7 @@
                     <input type="date" id="birthday" name="birthday" class="form-control" required>
                 </div>
             </div>
+
             <div class="row mb-3">
                 <div class="col-md-6">
                     <label for="gender" class="form-label">Gender</label>
@@ -51,10 +53,12 @@
                     <input type="text" id="mobile" name="mobile" class="form-control" required>
                 </div>
             </div>
+
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" id="email" name="email" class="form-control" required>
             </div>
+
             <div class="mb-3">
                 <label for="status" class="form-label">Status</label>
                 <select id="status" name="status" class="form-select" required>
@@ -64,6 +68,7 @@
                     <option value="Separated">Separated</option>
                 </select>
             </div>
+
             <button type="submit" class="btn btn-primary w-100">Submit</button>
         </form>
     </div>
